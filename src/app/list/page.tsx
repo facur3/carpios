@@ -1,7 +1,7 @@
-const ListPage = () => {
+const SinglePage = () => {
     return (
-        <div className=''>ListPage</div>
+        <div className=''>SinglePage</div>
     )
 }
 
-export default ListPage
+export default SinglePage
