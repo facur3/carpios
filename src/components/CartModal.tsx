@@ -13,6 +13,11 @@ const CartModal = () => {
             {!cartItems ? (
                 <div className="">Cart is empty</div>
             ) : (
+                <>
+                <h2 className="text-xl font-semibold">Shopping Cart</h2>
+                {/* LIST */}
+                <div className="flex flex-col gap-8">
+                    {/* ITEM */}
                 <div className="flex gap-4">
                     <Image src='https://images.pexels.com/photos/30649019/pexels-photo-30649019/free-photo-of-helado-de-vainilla-servido-en-vaso-sobre-fondo-rojo-brillante.jpeg?auto=compress&cs=tinysrgb&w=600&lazy=load' alt='' width={72} height={96} className="object-cover rounded-md"/>
                     <div className="flex flex-col justify-between w-full">
@@ -35,6 +40,22 @@ const CartModal = () => {
                         </div>
                     </div>
                 </div>
+                </div>
+                {/* BOTTOM */}
+                <div className="">
+                    <div className="flex items-center justify-between font-semibold">
+                        <span className="">Subtotal</span>
+                        <span className="">$49</span>
+                    </div>
+                    <p className="text-gray-500 text-sm mt-2 mb-4">
+                        Shipping and taces calculated at checkout.
+                    </p>
+                    <div className="flex justify-between text-sm">
+                        <button className="ring-1 ring-gray-300 px-4 py-2 rounded-md">View Cart</button>
+                        <button className="bg-black text-white px-4 py-2 rounded-md">Checkout</button>
+                    </div>
+                </div>
+                </>
             )}
         </div>
     )
