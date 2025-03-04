@@ -1,8 +1,7 @@
 'use client'
 
-//1:05:00
-
-import { useState } from 'react'
+import React, { useEffect } from 'react'
+import { use, useState } from 'react'
 import Link from 'next/link'
 import Image from 'next/image'
 
@@ -37,6 +36,13 @@ const slides = [
 const Slider = () => {
     const [current, setCurrent] = useState(0);
 
+    useEffect(() => {
+      const interval = setInterval(() => {
+        setCurrent(prev=>(prev === slides.length - 1 ? 0 : prev + 1))
+      },3000)
+
+      return () => clearInterval(interval);
+    },[]);
 
     return (
       <div className='h-[calc(100vh-80px)] overflow-hidden'>
