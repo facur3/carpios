@@ -17,7 +17,6 @@ const ProductList = () => {
                 <div className='text-sm text-gray-500'>My description</div>
                 <button className='rounded-2xl ring-1 ring-carpios text-carpios w-max py-2 px-4 text-xs hover:bg-carpios hover:text-white '>Add to Cart</button>
             </Link>
-            {/* DUPLICATES */}
             <Link href='/test' className='w-full flex flex-col gap-4 sm:w-[45%] lg:w-[22%]'>
                 <div className='relative w-full h-80'>
                     <Image src='https://images.pexels.com/photos/29697992/pexels-photo-29697992/free-photo-of-silueta-de-un-nino-caminando-hacia-el-mar-brumoso.jpeg?auto=compress&cs=tinysrgb&w=400&lazy=load' alt='' fill sizes='25vw' className='absolute object-cover rounded-md z-10 hover:opacity-0 transition-opacity easy duration-500'/>
@@ -54,7 +53,9 @@ const ProductList = () => {
                 <div className='text-sm text-gray-500'>My description</div>
                 <button className='rounded-2xl ring-1 ring-carpios text-carpios w-max py-2 px-4 text-xs hover:bg-carpios hover:text-white '>Add to Cart</button>
             </Link>
-            <Link href='/test' className='w-full flex flex-col gap-4 sm:w-[45%] lg:w-[22%]'>
+
+            {/* DUPLICATES */}
+{/*             <Link href='/test' className='w-full flex flex-col gap-4 sm:w-[45%] lg:w-[22%]'>
                 <div className='relative w-full h-80'>
                     <Image src='https://images.pexels.com/photos/9589455/pexels-photo-9589455.jpeg?auto=compress&cs=tinysrgb&w=400&lazy=load' alt='' fill sizes='25vw' className='absolute object-cover rounded-md z-10 hover:opacity-0 transition-opacity easy duration-500'/>
                     <Image src='https://images.pexels.com/photos/9477627/pexels-photo-9477627.jpeg?auto=compress&cs=tinysrgb&w=400&lazy=load' alt='' fill sizes='25vw' className='absolute object-cover rounded-md'/>
@@ -101,7 +102,7 @@ const ProductList = () => {
                 </div>
                 <div className='text-sm text-gray-500'>My description</div>
                 <button className='rounded-2xl ring-1 ring-carpios text-carpios w-max py-2 px-4 text-xs hover:bg-carpios hover:text-white '>Add to Cart</button>
-            </Link>
+            </Link> */}
         </div>
     )
 }
