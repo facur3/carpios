@@ -40,7 +40,7 @@ const ProductImages = ({ items }: { items: any[] }) => {
         ))}
       </div>
     </div>
-  );
-};
+  )
+}
 
-export default ProductImages;
+export default ProductImages
